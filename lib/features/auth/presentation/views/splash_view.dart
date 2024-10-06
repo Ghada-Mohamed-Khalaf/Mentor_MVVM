@@ -20,7 +20,7 @@ class _SplashViewState extends State<SplashView> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset("assets/images/img.png"),
-            Text("The best chat app of this century"),
+            Text("The best chat app of this century",style: TextStyle(fontWeight: FontWeight.bold),),
             SizedBox(height: 50,),
             CustomButton(onTap: () {
             Navigator.of(context).push(MaterialPageRoute(builder: (context) {
