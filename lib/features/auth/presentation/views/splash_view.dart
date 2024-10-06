@@ -11,7 +11,7 @@ class SplashView extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset("assets/images/img.png"),
-         // Text("The best chat app of this century")
+          Text("The best chat app of this century"),
 
         ],
 
