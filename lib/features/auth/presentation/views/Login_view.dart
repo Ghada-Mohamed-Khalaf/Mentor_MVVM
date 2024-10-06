@@ -8,8 +8,12 @@ class LoginView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
     child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset("assets/images/img.png"),
+        Text("Log in your account ",style: TextStyle(fontWeight: FontWeight.bold),),
+        SizedBox(height: 20,),
+
       ],
     ),
       ),
