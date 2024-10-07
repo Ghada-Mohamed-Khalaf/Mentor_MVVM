@@ -30,7 +30,13 @@ class LoginView extends StatelessWidget {
 
         ),
         SizedBox(height: 40,),
-        CustomButton(onTap:(){}, text: "Log in")
+        CustomButton(onTap:(){}, text: "Log in",),
+        Row(
+          children: [
+
+
+          ],
+        )
 
 
       ],
