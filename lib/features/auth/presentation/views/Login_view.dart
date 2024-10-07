@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm_mentor/features/auth/presentation/views/widgets/custom_button.dart';
 import 'package:mvvm_mentor/features/auth/presentation/views/widgets/custom_text_field.dart';
 
 class LoginView extends StatelessWidget {
@@ -28,6 +29,8 @@ class LoginView extends StatelessWidget {
 
 
         ),
+        SizedBox(height: 40,),
+        CustomButton(onTap:(){}, text: "Log in")
 
 
       ],

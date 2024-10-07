@@ -14,7 +14,8 @@ class CustomTextField extends StatelessWidget {
         hintText:hitText,
         labelText:labelText,
       prefixIcon:Icon(Icons.message),
-suffixIcon: Icon(Icons.visibility_off_outlined)
+suffixIcon: Icon(Icons.visibility_off_outlined),
+
 
       ),
 
