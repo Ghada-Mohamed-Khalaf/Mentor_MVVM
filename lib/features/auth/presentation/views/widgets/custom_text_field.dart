@@ -13,11 +13,12 @@ class CustomTextField extends StatelessWidget {
         border: OutlineInputBorder(),
         hintText:hitText,
         labelText:labelText,
-        prefixIcon:Icon(Icons.message),
-
+      prefixIcon:Icon(Icons.message),
+suffixIcon: Icon(Icons.visibility_off_outlined)
 
       ),
 
     );
+
   }
 }

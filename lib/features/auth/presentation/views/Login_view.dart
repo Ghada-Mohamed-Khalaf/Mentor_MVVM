@@ -20,6 +20,15 @@ class LoginView extends StatelessWidget {
 
 
         ),
+        SizedBox(height: 20,),
+        CustomTextField(
+          hitText: "enter your password",
+          labelText: "enter your password",
+
+
+
+        ),
+
 
       ],
     ),
