@@ -5,6 +5,18 @@ class WhatsUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return  Scaffold(
+      appBar: AppBar(
+        title: Text("WhatsUp"),
+        actions: [
+          IconButton(onPressed: (){}, icon:Icon(Icons.search),
+
+          ),
+    IconButton(onPressed: (){}, icon:Icon(Icons.add ),
+    ),
+        ],
+    ),
+
+    );
   }
 }
