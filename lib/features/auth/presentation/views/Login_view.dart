@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm_mentor/features/auth/presentation/views/sign_up_view.dart';
 import 'package:mvvm_mentor/features/auth/presentation/views/widgets/custom_button.dart';
 import 'package:mvvm_mentor/features/auth/presentation/views/widgets/custom_text_button.dart';
 import 'package:mvvm_mentor/features/auth/presentation/views/widgets/custom_text_field.dart';
@@ -41,7 +42,11 @@ class _LoginViewState extends State<LoginView> {
 
             ),
             SizedBox(height: 25,),
-            CustomButton(onTap:(){}, text: "Log in",),
+            CustomButton(onTap:(){
+              Navigator.push(context, MaterialPageRoute(builder: (context){
+                return SignUpView();
+              }));
+            }, text: "Log in",),
             SizedBox(height: 30,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
