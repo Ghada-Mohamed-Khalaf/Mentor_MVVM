@@ -12,10 +12,27 @@ class WhatsUp extends StatelessWidget {
           IconButton(onPressed: (){}, icon:Icon(Icons.search),
 
           ),
-    IconButton(onPressed: (){}, icon:Icon(Icons.add ),
+    IconButton(onPressed: (){}, icon:Icon(Icons.add),
     ),
         ],
     ),
+      body:Column(
+        children: [
+          Divider(),
+          Row(children: [
+            ListTile(
+              leading: ClipRRect(child: Image.asset(" "),),
+              title: Text("Ghada Mohamed"),
+             //
+              subtitle: Text("#01550740756"),
+            )
+
+          ],
+
+          )
+        ],
+
+      )  ,
 
     );
   }

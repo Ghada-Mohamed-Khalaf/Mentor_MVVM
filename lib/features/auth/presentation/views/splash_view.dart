@@ -11,6 +11,17 @@ class SplashView extends StatefulWidget {
 
 class _SplashViewState extends State<SplashView> {
   @override
+  void initState() {
+    super.initState();
+
+    Future.delayed(Duration(seconds: 5), () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => LoginView()),
+      );
+    });
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
@@ -20,25 +31,24 @@ class _SplashViewState extends State<SplashView> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset("assets/images/img.png"),
-            Text("The best chat app of this century",style: TextStyle(fontWeight: FontWeight.bold),),
-            SizedBox(height: 50,),
-            CustomButton(onTap: () {
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-            return LoginView();
-
-
-            }));
-            },
-              text: "continue"),
-
-
-
-
+            Text(
+              "The best chat app of this century",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            // SizedBox(
+            //   height: 50,
+            // ),
+            // CustomButton(
+            //     onTap: () {
+            //       Navigator.of(context)
+            //           .push(MaterialPageRoute(builder: (context) {
+            //         return LoginView();
+            //       }));
+            //     },
+            //     text: "continue"),
           ],
-
         ),
       ),
-
     );
   }
 }
