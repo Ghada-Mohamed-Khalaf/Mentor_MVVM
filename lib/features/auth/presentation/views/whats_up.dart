@@ -20,12 +20,12 @@ class WhatsUp extends StatelessWidget {
         children: [
           Divider(),
           Row(children: [
-            ListTile(
-              leading: ClipRRect(child: Image.asset(" "),),
-              title: Text("Ghada Mohamed"), 
-             //
-              subtitle: Text("#01550740756"),
-            )
+            // ListTile(
+            //   leading: ClipRRect(child: Image.asset(" "),),
+            //   title: Text("Ghada Mohamed"),
+            //  //
+            //   subtitle: Text("#01550740756"),
+            // )
 
           ],
 
