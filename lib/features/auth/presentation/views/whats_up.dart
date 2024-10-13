@@ -25,8 +25,7 @@ class WhatsUp extends StatelessWidget {
             //   title: Text("Ghada Mohamed"),
             //  //
             //   subtitle: Text("#01550740756"),
-            // )
-
+            //
           ],
 
           )
