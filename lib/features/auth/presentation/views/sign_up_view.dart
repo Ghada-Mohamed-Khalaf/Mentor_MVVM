@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm_mentor/features/auth/presentation/views/main_activity.dart';
 import 'package:mvvm_mentor/features/auth/presentation/views/whats_up.dart';
 import 'package:mvvm_mentor/features/auth/presentation/views/widgets/custom_button.dart';
 import 'package:mvvm_mentor/features/auth/presentation/views/widgets/custom_text_button.dart';
@@ -54,7 +55,7 @@ class SignUpView extends StatelessWidget {
                 ),
                 SizedBox(height: 25,),
                 CustomButton(onTap:(){ Navigator.push(context, MaterialPageRoute(builder: (context){
-                  return WhatsUp();
+                  return MainActivity();
                 }));}, text: "Sign Up",),
                 SizedBox(height: 30,),
                 Row(
