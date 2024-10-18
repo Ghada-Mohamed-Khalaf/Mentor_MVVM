@@ -4,6 +4,8 @@ import 'package:mvvm_mentor/features/auth/presentation/model/cubit/cubit.dart';
 import 'package:mvvm_mentor/features/auth/presentation/model/cubit/state.dart';
 import 'package:mvvm_mentor/features/auth/presentation/views/splash_view.dart';
 
+import 'features/auth/presentation/views/profile.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
         builder: (BuildContext context, MainState state) {
           return const MaterialApp(
             debugShowCheckedModeBanner: false,
-            home: SplashView(),
+            home: Profile(),
           );
         },
       ),

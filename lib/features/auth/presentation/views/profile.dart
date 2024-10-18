@@ -12,9 +12,9 @@ class Profile extends StatelessWidget {
       body:Column(
         children: [
           Divider(),
-          ClipRRect(
-
-          ),
+         CircleAvatar(
+           radius:35
+         )
         ],
       ));
   }
