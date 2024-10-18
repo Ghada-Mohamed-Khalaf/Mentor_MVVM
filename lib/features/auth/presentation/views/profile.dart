@@ -7,14 +7,14 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-        title: Text("Profile"),
+        title: const Text("Profile"),
         ),
-      body:Column(
+      body:const Column(
         children: [
           Divider(),
          CircleAvatar(
-           radius:35
-         )
+           radius:35,
+         ),
         ],
       ));
   }
